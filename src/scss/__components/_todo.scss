@@ -1,0 +1,155 @@
+.block-todo {
+	$block: &;
+	&__nav {
+	}
+	&__nav-list {
+		margin-bottom: rem(18);
+		border-bottom: rem(1) solid $color-silver;
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	&__nav-list-item {
+		cursor: pointer;
+		border-bottom: rem(2) dotted transparent;
+		padding-bottom: rem(18);
+		transition: color $default-transition, border-bottom $default-transition;
+		&:hover {
+			border-bottom: rem(2) dotted $color-royal-blue;
+			color: $color-royal-blue;
+		}
+	}
+	&__add-task {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 4%;
+		margin-bottom: rem(32);
+	}
+	&__add-input {
+		color: $color-silver;
+		border: rem(1) solid $color-silver;
+		max-width: 60%;
+		flex-basis: 60%;
+		transition: border-color $default-transition;
+		&:hover {
+			border-color: $color-royal-blue;
+		}
+		@include media(">=lg") {
+			max-width: 80%;
+			flex-basis: 80%;
+		}
+	}
+	&__add-btn {
+		max-width: 36%;
+		flex-basis: 36%;
+		@include media(">=lg") {
+			max-width: 16%;
+			flex-basis: 16%;
+		}
+	}
+	&__completed-tasks {
+		text-decoration: line-through;
+		color: $color-jungle-green;
+	}
+
+	&__tasks-box {
+		display: flex;
+		flex-direction: column;
+		gap: rem(10);
+		margin-bottom: rem(23);
+		@include media(">=lg") {
+			gap: rem(24);
+			margin-bottom: rem(33);
+		}
+	}
+	&__one-task {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		gap: rem(10);
+		@include media(">=lg") {
+			gap: rem(24);
+		}
+		&--ready {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+		}
+	}
+	&__task-part {
+		display: flex;
+		gap: rem(8);
+
+		&--check label,
+		input[type="checkbox"] {
+			cursor: pointer;
+		}
+		&--check {
+			&:hover {
+				color: $color-jungle-green;
+			}
+		}
+		&--change {
+		}
+		&--edit {
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+		}
+	}
+	&__label {
+	}
+	&__icon-action {
+		cursor: pointer;
+		&--edit {
+			border: rem(1) solid $color-silver;
+			&:hover {
+				border-color: $color-royal-blue;
+			}
+		}
+		&--delete {
+			border: rem(1) solid $color-black;
+			&:hover {
+				border-color: $color-burnt-sienna;
+			}
+		}
+		&--ok {
+			border: rem(1) solid $color-silver;
+			height: max-content;
+			&:hover {
+				border-color: $color-jungle-green;
+			}
+		}
+		&--back {
+			border: rem(1) solid $color-black;
+			height: max-content;
+			&:hover {
+				border-color: $color-royal-blue;
+			}
+		}
+	}
+	&__icon-box {
+		width: rem(20);
+		height: rem(20);
+	}
+	&__icon {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__edit-input {
+		border: rem(1) solid $color-royal-blue;
+		color: $color-royal-blue;
+		width: 60%;
+		&:hover {
+			border-color: $color-jungle-green;
+		}
+		@include media(">=lg") {
+			width: 80%;
+		}
+	}
+}

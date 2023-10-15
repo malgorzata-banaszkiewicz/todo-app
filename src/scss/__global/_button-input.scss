@@ -1,0 +1,8 @@
+.button-input {
+	border-radius: rem(12);
+	padding: rem(15) rem(20);
+	@include media(">=lg") {
+		padding: rem(20) rem(40);
+		@include font(14, false, 600, false, false, $font-montserrat);
+	}
+}

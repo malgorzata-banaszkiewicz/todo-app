@@ -1,0 +1,23 @@
+.button {
+	background-color: $color-royal-blue;
+	color: $color-white;
+	border: none;
+	transition: filter $default-transition;
+	cursor: pointer;
+	&:hover {
+		filter: sepia(50%);
+	}
+	&:active {
+		filter: saturate(4);
+	}
+
+	&--delete {
+		background-color: $color-burnt-sienna;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: rem(10);
+		padding: rem(13) rem(26);
+		margin-left: auto;
+	}
+}

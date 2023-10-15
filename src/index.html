@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>To Do App</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<main>
+			<section class="block block-hero">
+				<div class="container">
+					<h1 class="block-hero__title">#todo</h1>
+				</div>
+			</section>
+			<section class="block block-todo">
+				<div class="container">
+					<nav class="block-todo__nav">
+						<ul class="block-todo__nav-list">
+							<li
+								class="block-todo__nav-list-item active-nav"
+								data-tab="all">
+								All
+							</li>
+							<li
+								class="block-todo__nav-list-item"
+								data-tab="active">
+								Active
+							</li>
+							<li
+								class="block-todo__nav-list-item"
+								data-tab="completed">
+								Completed
+							</li>
+						</ul>
+					</nav>
+					<div class="block-todo__add-task">
+						<input
+							type="text"
+							placeholder="add details"
+							class="block-todo__add-input button-input" />
+						<button
+							type="submit"
+							class="button block-todo__add-btn button-input">
+							Add
+						</button>
+					</div>
+						<div class="block-todo__tasks-box">
+							<div class="block-todo__one-task">
+								<div class="block-todo__one-task--ready">
+								<div class="block-todo__task-part block-todo__task-part--check">
+									<input
+										id="done1"
+										name="done1"
+										type="checkbox" />
+									<label
+										for="done1"
+										class="block-todo__label"
+										>Task 1</label
+									>
+								</div>
+								<div
+									class="block-todo__task-part block-todo__task-part--change">
+									<a
+										href="#"
+										target="_self"
+										class="block-todo__icon-action block-todo__icon-action--edit"
+										><figure class="block-todo__icon-box">
+											<img
+												src="./images/swp-sf-edit.svg"
+												class="block-todo__icon" /></figure
+									></a>
+									<a
+										href="#"
+										target="_self"
+										class="block-todo__icon-action block-todo__icon-action--delete"
+										><figure class="block-todo__icon-box">
+											<img
+												src="./images/delete.svg"
+												class="block-todo__icon" /></figure
+									></a>
+								</div>
+								</div>
+								<div class="block-todo__task-part block-todo__task-part--edit hidden">
+									<input type="text" class="block-todo__edit-input button-input" placeholder="edit task" value=""/>
+									<div class="block-todo__task-part block-todo__task-part--edit-icons">
+										<a class="block-todo__icon-action block-todo__icon-action--ok"><figure class="block-todo__icon-box"><img src="./images/ok.svg" class="block-todo__icon"></figure></a>
+										<a class="block-todo__icon-action block-todo__icon-action--back"><figure class="block-todo__icon-box"><img src="./images/back.svg" class="block-todo__icon"></figure></a>
+									</div>
+								</div>
+							</div>
+							<div class="block-todo__one-task">
+								<div class="block-todo__one-task--ready">
+									<div class="block-todo__task-part block-todo__task-part--check">
+										<input
+											id="done2"
+											name="done2"
+											type="checkbox" />
+										<label
+											for="done2"
+											class="block-todo__label"
+											>Task 2</label
+										>
+									</div>
+									<div
+										class="block-todo__task-part block-todo__task-part--change">
+										<a
+											href="#"
+											target="_self"
+											class="block-todo__icon-action block-todo__icon-action--edit"
+											><figure class="block-todo__icon-box">
+												<img
+													src="./images/swp-sf-edit.svg"
+													class="block-todo__icon" /></figure
+										></a>
+										<a
+											href="#"
+											target="_self"
+											class="block-todo__icon-action block-todo__icon-action--delete"
+											><figure class="block-todo__icon-box">
+												<img
+													src="./images/delete.svg"
+													class="block-todo__icon" /></figure
+										></a>
+									</div>
+								</div>
+								<div class="block-todo__task-part block-todo__task-part--edit hidden">
+									<input type="text" class="block-todo__edit-input button-input" placeholder="edit task" value=""/>
+									<div class="block-todo__task-part block-todo__task-part--edit-icons">
+										<a class="block-todo__icon-action block-todo__icon-action--ok"><figure class="block-todo__icon-box"><img src="./images/ok.svg" class="block-todo__icon"></figure></a>
+										<a class="block-todo__icon-action block-todo__icon-action--back"><figure class="block-todo__icon-box"><img src="./images/back.svg" class="block-todo__icon"></figure></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="button button--delete button-input hidden">
+							<figure class="block-todo__icon-box">
+								<img
+									class="block-todo__icon"
+									src="./images/delete.svg" />
+							</figure>
+							delete all
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<div class="container">
+				<p class="main-footer__owner">
+					created by
+					<a
+						href="#"
+						target="_blank"
+						class="main-footer__owner-name"
+						>username</a
+					>
+					- devChallenges.io
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
